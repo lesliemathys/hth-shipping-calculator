@@ -21,13 +21,16 @@ body {
 }
 
 .usd-equals {
+    padding: 1em;
     display: flex;
     color: rgba(255, 255, 255, 0.6);
 }
 
 .aud-equals {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
     display: flex;
-    font-size: 1.5rem;
     font-weight: bold;
     color: rgba(255, 255, 255, 1)
 }
@@ -51,6 +54,13 @@ body {
 .data-entry, .data-display, .h1-entry {
     padding: 1em;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.usd-entry, .aud-display {
+    display: flex;
+    padding: 1em;
     flex-direction: row;
     justify-content: space-between;
 }
