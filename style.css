@@ -13,6 +13,25 @@ body {
     margin-inline: auto;
 }
 
+.exchange-rate {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.usd-equals {
+    display: flex;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.aud-equals {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1)
+}
+
 .heading {
     display: flex;
     justify-content: center;
@@ -41,8 +60,15 @@ body {
     font-weight: bold;
 }
 
-.field {
+.field, .aud-converted {
     border: none;
-    border-radius: 1em;
+    border-radius: 0.5em;
     background-color: white;
+}
+
+.conversion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
 }
