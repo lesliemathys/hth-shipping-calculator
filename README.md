@@ -10,9 +10,11 @@ The cost price is made of two costs:
     - Shipping price per item in USD.
 
 *Problem*
+
 What is the overall cost price of Item X?
 
 *Solution*
+
 This calculator does the following:
     - Provides a live exchange rate feed.
         - This allows for user to convert prices from USD to AUD.
