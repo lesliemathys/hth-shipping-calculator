@@ -3,82 +3,14 @@
     margin: 0;
     background-color: #005CAB;
     font-family: system-ui, sans-serif;
+    box-sizing: inherit;
 }
 
 body {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: min(65ch, 100% - 3rem);
     margin-inline: auto;
-}
-
-.exchange-rate {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 2em;
-}
-
-.usd-equals {
-    padding: 1em;
-    display: flex;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.aud-equals {
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: 1em;
-    display: flex;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 1)
-}
-
-.heading {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    color: white;
-    font-size: 2.5rem;
-    font-weight: 700;
-}
-
-.info-input, .results {
-    padding: 2em;
-    color: white;
-    display: flex;
-    flex-direction: column;
-}
-
-.data-entry, .data-display, .h1-entry {
-    padding: 1em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.usd-entry, .aud-display {
-    display: flex;
-    padding: 1em;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.h1-entry > p {
-    font-size: 1.25rem;
-    font-weight: bold;
-}
-
-.field, .aud-converted {
-    border: none;
-    border-radius: 0.5em;
-    background-color: white;
-}
-
-.conversion {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    color: white;
 }
