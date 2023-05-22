@@ -26,15 +26,14 @@ input[type=number]{
 }
 
 body {
+    display: flex;
     background-color: #005CAB;
     width: min(65ch, 100% - 3rem);
     margin-inline: auto;
 }
 
 form {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .currency-conv {
@@ -50,7 +49,7 @@ form {
     border-radius: 0.5rem;
 }
 
-.data-entry  {
+.data-entry {
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
@@ -74,9 +73,23 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
+    margin-right: 2rem;
 }
 
 .entry-to-h1 {
     display: flex;
     align-items: stretch;
 }
+
+@media screen and (max-width: 475px) {
+    .calculations {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .entry-to-h1 {
+        display: flex;
+        justify-content: stretch;
+        margin-top: 2rem;
+    }
+  }
