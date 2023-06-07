@@ -12,7 +12,6 @@ input[type=number]{
 
 * {
     margin: 0;
-    margin: 0;
     font-family: system-ui, sans-serif;
     box-sizing: border-box;
 }
@@ -37,6 +36,8 @@ body {
     background-color: white;
     border-radius: 20px;
     width: inherit;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 .title {
     display: flex;
@@ -51,8 +52,8 @@ body {
     border-top: 1px solid #ccc;
     border-bottom: none;
     margin-top: .75rem;
-    marginbottom: .75rem;
-    width: 85%;
+    margin-bottom: .75rem;
+    width: 100%;
 }
 
 .currency-conv, .shipping-calculation, .result {
@@ -66,13 +67,17 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.form-input {
+.form-input, .form-result {
     display: flex;
     border: none;
     background-color: white;
     padding: 0.75rem;
     margin: 0.75rem;
     border-radius: 0.25rem;
+}
+
+input {
+    font-size: 1rem;
 }
 
 .result > * {
