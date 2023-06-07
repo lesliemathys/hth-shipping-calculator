@@ -25,17 +25,56 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid white;
     background-color: #005CAB;
     width: min(75ch, 100% - 3rem);
     margin-inline: auto;
 }
 
-.title, .currency-conv, shipping-calculation, result {
+.form {
     display: flex;
-    border: 1px dotted white;
+    flex-direction: column;
+    align-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+    width: inherit;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    color: #005CAB;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
 }
 
-.title {
-    color: white;
+.divider {
+    margin-inline: auto;
+    border-top: 1px solid #ccc;
+    border-bottom: none;
+    margin-top: .75rem;
+    marginbottom: .75rem;
+    width: 85%;
+}
+
+.currency-conv, .shipping-calculation, .result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.result {
+    margin-bottom: 1.5rem;
+}
+
+.form-input {
+    display: flex;
+    border: none;
+    background-color: white;
+    padding: 0.75rem;
+    margin: 0.75rem;
+    border-radius: 0.25rem;
+}
+
+.result > * {
+    outline: none;
 }

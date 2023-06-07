@@ -9,14 +9,32 @@
     <script src="./script.js"></script>
 </head>
 <body>
-    <form class = "form">
-        <h1 class = "title">H1 Purchase Price Calculator</h1>
+    <form class="form">
+        <h1 class="title">H1 Purchase Price Calculator</h1>
 
-        <div class = "currency-conv"></div>
+        <hr class="divider">
 
-        <div class = "shipping-calculation"></div>
+        <div class="currency-conv">
+            <input type="number" class="form-input" id="USD" placeholder="Item cost price: USD"></input>
+            <input type="number" class="form-input" id="AUD" placeholder="Item cost price: AUD" readonly=""></input>
+        </div>
 
-        <div class = "result"></div>
+        <hr class="divider">
+
+        <div class="shipping-calculation">
+            <input type="number" class="form-input" placeholder="40ft container price: AUD">
+            <input type="number" class="form-input" placeholder="How many 40ft containers are there?">
+            <input type="number" class="form-input" placeholder="What is total quantity of items?">
+        </div>
+
+
+        <hr class="divider">
+
+        <div class="result">
+            <input type="number" class="form-input" placeholder="Purchase price of item" readonly="">
+            <input type="number" class="form-input" placeholder="Shipping price of item" readonly="">
+            <input type="number" class="form-input" id="end-calc" placeholder="Enter in H1" readonly="">
+        </div>
 
     </form>
 </body>
