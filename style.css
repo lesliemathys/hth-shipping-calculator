@@ -17,4 +17,25 @@ input[type=number]{
     box-sizing: border-box;
 }
 
-.
+html,  body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    background-color: #005CAB;
+    width: min(75ch, 100% - 3rem);
+    margin-inline: auto;
+}
+
+.title, .currency-conv, shipping-calculation, result {
+    display: flex;
+    border: 1px dotted white;
+}
+
+.title {
+    color: white;
+}
