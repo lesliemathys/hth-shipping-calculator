@@ -15,26 +15,40 @@
         <hr class="divider">
 
         <div class="currency-conv">
-            <input type="number" class="form-input" id="USD" placeholder="Purchase price: USD">
-            <input type="number" class="form-input" id="AUD" placeholder="Purchase price: AUD" readonly="">
+            <label class="label">Purchase Price: USD</label>
+            <input type="number" class="form-input" id="USD" placeholder="0">
+
+            <label class="label">Purchase Price: AUD</label>
+            <input type="number" class="form-input" id="AUD" placeholder="0" readonly="">
         </div>
 
         <hr class="divider">
 
         <div class="shipping-calculation">
-            <input type="number" class="form-input" id="container-price" placeholder="Container price: AUD">
-            <input type="number" class="form-input" id="container-qty" placeholder="Container quantity">
-            <input type="number" class="form-input" id="item-qty" placeholder="Item quantity">
-            <button id="calc">Calculate</button>
+            <label class="label">Container price</label>
+            <input type="number" class="form-input" id="container-price" placeholder="0">
+
+            <label class="label">Container Quantity</label>
+            <input type="number" class="form-input" id="container-qty" placeholder="0">
+
+            <label class="label">Item Quantity</label>
+            <input type="number" class="form-input" id="item-qty" placeholder="0">
+
+            <button id="calc">Calculate Shipping Price</button>
         </div>
 
 
         <hr class="divider">
 
         <div class="result">
-            <input type="number" class="form-result" id="purchase-price" placeholder="Purchase price per item" readonly="">
-            <input type="number" class="form-result" id="shipping-price" placeholder="Shipping price per item" readonly="">
-            <input type="number" class="form-result" id="h1-entry" placeholder="Enter in H1" readonly="">
+            <label class="label">Purchase Price Per Item</label>
+            <input type="number" class="form-result" id="purchase-price" placeholder="0" readonly="">
+
+            <label class="label">Shipping Price Per Item</label>
+            <input type="number" class="form-result" id="shipping-price" placeholder="0" readonly="">
+
+            <label class="label">H1 Purchase Price</label>
+            <input type="number" class="form-result" id="h1-entry" placeholder="0" readonly="">
         </div>
 
     </form>

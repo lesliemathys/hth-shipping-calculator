@@ -14,6 +14,8 @@ input[type=number]{
     margin: 0;
     font-family: system-ui, sans-serif;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 html,  body {
@@ -49,7 +51,8 @@ body {
 
 .divider {
     margin-inline: auto;
-    border-top: 1px solid #ccc;
+    border-top: 2px solid #005CAB;
+    opacity: 0.25;
     border-bottom: none;
     margin-top: .75rem;
     margin-bottom: .75rem;
@@ -69,17 +72,56 @@ body {
 
 .form-input, .form-result {
     display: flex;
-    border: none;
     background-color: white;
-    padding: 0.75rem;
-    margin: 0.75rem;
-    border-radius: 0.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    margin-bottom: 0.65rem;
+    border: none;
+    transition-duration; 0.4s;
+    outline: none;
 }
 
-input {
-    font-size: 1rem;
+.form-input:focus {
+    outline-color: #005CAB
+}
+
+.label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #005CAB;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    margin-bottom: 0.25rem;
 }
 
 .result > * {
     outline: none;
+}
+
+button {
+    margin-inline: auto;
+    margin-bottom: .75rem;
+    background-color: #005CAB;
+    opacity: 0.6;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 50%;
+    transition-duration: 0.3s;
+    letter-spacing: 2px;
+    font-weight: bold;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 366px) {
+    button {
+        font-size: 0.6rem;
+    }
 }
