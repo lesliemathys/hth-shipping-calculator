@@ -10,12 +10,15 @@ The cost price is made of two costs:
     - Shipping price per item in USD.
 
 **Problem**
+
 What is the total cost price of Item X? Total cost = purchase price of Item X + shipping price of Item X.
 
 **Why do we need this?**
+
 It allows for more accurate financial reporting on the stock performance of an item and allows for better informed decision-making. 
 
 **Solution**
+
 This calculator does the following:
     - Provides a live exchange rate feed.
         - This allows for user to convert prices from USD to AUD.
@@ -27,6 +30,7 @@ This calculator does the following:
     - Generate a final price, that gets entered into our stock management system. 
 
 **Learnings**
+
 Even though it was a simple project, I have:
     - Sharpened my HTML and CSS skills.
     - For the first time, I used JS to pull information using an API.
