@@ -73,12 +73,14 @@ body {
 .form-input, .form-result {
     display: flex;
     background-color: white;
+    font-size: 1rem;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
     margin-bottom: 0.65rem;
     border: none;
     transition-duration; 0.4s;
     outline: none;
+    letter-spacing: 2px;
 }
 
 .form-input:focus {

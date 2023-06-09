@@ -24,7 +24,7 @@ rateReq.addEventListener("load", function () {
     document.getElementById("calc").addEventListener("click", function(e) {
         e.preventDefault();
         shippingPrice.value = (parseInt(priceField.value) * parseInt(quantity.value)) / parseInt(itemQuantity.value)
-        harrysOneCostPrice.value = Math.round(parseFloat(purchasePrice.value) + parseFloat(shippingPrice.value));
+        harrysOneCostPrice.value = Math.ceil(parseFloat(purchasePrice.value) + parseFloat(shippingPrice.value));
     })
 });
 rateReq.open("GET", "https://api.freecurrencyapi.com/v1/latest");
