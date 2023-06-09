@@ -11,6 +11,7 @@ rateReq.addEventListener("load", function () {
     const aussiePrice = document.getElementById("AUD");
     const purchasePrice = document.getElementById("purchase-price");
     const harrysOneCostPrice = document.getElementById("h1-entry");
+    const harrysOneSalePrice = document.getElementById("h1-sell-price");
 
     //when there is an input in the USD field it multiplies USD by exchange rate to give an AUD value
     document.getElementById("USD").addEventListener("input", purchasePricecalc);
@@ -25,6 +26,7 @@ rateReq.addEventListener("load", function () {
         e.preventDefault();
         shippingPrice.value = (parseInt(priceField.value) * parseInt(quantity.value)) / parseInt(itemQuantity.value)
         harrysOneCostPrice.value = Math.ceil(parseFloat(purchasePrice.value) + parseFloat(shippingPrice.value));
+        harrysOneSalePrice.value = parseFloat(harrysOneCostPrice.value / 2);
     })
 });
 rateReq.open("GET", "https://api.freecurrencyapi.com/v1/latest");
