@@ -16,23 +16,23 @@
 
         <div class="currency-conv">
             <label class="label">Purchase Price: USD</label>
-            <input type="number" class="form-input" id="USD" placeholder="0">
+            <input inputmode="numeric" pattern="[0-9]*" type="text" class="form-input" id="USD" placeholder="0">
 
             <label class="label">Purchase Price: AUD</label>
-            <input type="number" class="form-input" id="AUD" placeholder="0" readonly="">
+            <input inputmode="numeric" pattern="[0-9]*" type="text" class="form-input" id="AUD" placeholder="0" readonly="">
         </div>
 
         <hr class="divider">
 
         <div class="shipping-calculation">
             <label class="label">Container price: AUD</label>
-            <input type="number" class="form-input" id="container-price" placeholder="0">
+            <input inputmode="numeric" pattern="[0-9]*" type="text" class="form-input" id="container-price" placeholder="0">
 
             <label class="label">Container Quantity</label>
-            <input type="number" class="form-input" id="container-qty" placeholder="0">
+            <input inputmode="numeric" pattern="[0-9]*" type="text" class="form-input" id="container-qty" placeholder="0">
 
             <label class="label">Item Quantity</label>
-            <input type="number" class="form-input" id="item-qty" placeholder="0">
+            <input inputmode="numeric" pattern="[0-9]*" type="text" class="form-input" id="item-qty" placeholder="0">
 
             <button id="calc">Calculate Shipping Price</button>
         </div>
