@@ -29,6 +29,7 @@ body {
     background-color: #005CAB;
     width: min(75ch, 100% - 3rem);
     margin-inline: auto;
+    overflow: scroll;
 }
 
 .form {
@@ -71,7 +72,6 @@ body {
 }
 
 .form-input, .form-result {
-    display: flex;
     background-color: white;
     font-size: 1.25rem;
     font-weight: 600;
@@ -85,13 +85,9 @@ body {
     letter-spacing: 2px;
 }
 
-.form-input:focus {
-    outline-color: #005CAB
-}
-
 .label {
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #005CAB;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
@@ -110,7 +106,7 @@ button {
     border: none;
     outline: none;
     color: white;
-    padding: 0.5rem;
+    padding: 0.75rem;
     border-radius: 0.5rem;
     width: 50%;
     transition-duration: 0.3s;
@@ -124,8 +120,14 @@ button:hover {
     opacity: 1;
 }
 
-@media screen and (max-width: 366px) {
+@media screen and (max-width: 380px) {
     button {
         font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-height: 760px) {
+    body {
+        align-items: flex-start;
     }
 }
